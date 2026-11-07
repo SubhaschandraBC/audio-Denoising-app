@@ -1,0 +1,1 @@
+streamlit\nnumpy\nlibrosa\nsoundfile\n
