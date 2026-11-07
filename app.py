@@ -53,7 +53,9 @@ elif option == "Upload Noisy Audio":
 
 # Denoise part - same for all 3 options
 if 'noisy' in st.session_state:
-    window = st.slider("Filter Window Size", 5, 51, 21, step=2)
+    window = st.slider("Filter Window Size", 5, 51, 21, step=2,key="filter1")
+    window = st.slider("Filter Window Size", 5, 51, 21, step=2,key="filter2")
+    window = st.slider("Filter Window Size", 5, 51, 21, step=2,key="filter3")
     if st.button("Denoise"):
         noisy = st.session_state['noisy']
         sr = st.session_state['sr']
